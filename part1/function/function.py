@@ -82,7 +82,6 @@ eggs = 42
 spam()
 print(eggs)
 
-
 # Local and Global Variables with the Same Name
 def spam():
     eggs = 'spam local'

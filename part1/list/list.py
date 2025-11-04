@@ -1,7 +1,9 @@
+# A list is a value that contains multiple values in an ordered sequence.
 print([1, 2, 3])
 print(['cat', 'bat', 'rat', 'elephant'])
 print(['hello', 3.1415, True, None, 42])
-spam = ['cat', 'bat', 'rat', 'elephant']
+spam = ['cat', 'bat', 'rat', 'elephant']  
+# The term list value refers to the list itself (which is the value that can be stored in a variable or passed to a function like any other value), not a value inside a list value.  
 
 # Getting Individual Values in a List with Indexes
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -31,7 +33,6 @@ spam = ['cat', 'bat', 'rat', 'elephant']
 print(spam[0:4])
 print(spam[1:3])
 print(spam[0:-1])
-
 print(spam[:2])
 print(spam[1:])
 print(spam[:])
@@ -206,9 +207,12 @@ newName = name[0:7] + 'the' + name[8:12]
 print(name)
 print(newName)
 
-eggs = [1, 2, 3]
-eggs = [4, 5, 6] # this does not modify the list
+eggs = [1, 2, 3] # this is a mutable data type
+eggs[1] = 'hello'
+print(eggs)
 
+eggs = [4, 5, 6] # this does not modify the list
+print(eggs)
 eggs = [1, 2, 3]
 del eggs[2]
 del eggs[1]

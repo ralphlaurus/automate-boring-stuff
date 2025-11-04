@@ -85,7 +85,7 @@ while True:
     print('Please type your name.')
     name = input()
     if name == 'your name':
-        break
+        break # exit the loop
 
 print('Thank you!')
 
@@ -146,8 +146,9 @@ for i in range(5, -1, -1):
 # Importing Modules
 import random, sys, os, math
 
+# printRandom.py
 for i in range(5):
-    print(random.randint(1, 10))
+    print(random.randint(1, 10)) # random.randint(a, b): return a random integer N such that a <= N <= b
 
 # from import statements
 from random import *

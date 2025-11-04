@@ -43,7 +43,7 @@ print(spam)
 
 # The str(), int(), and float() Functions
 print('I am ' + str(29) + ' years old.') # get the string type of 29 value
-# Examples: str(0), str(-3.14), int('42), int('-99'), int(1.25), int(1.99), float('3.14'), float(10)
+# Examples: str(0), str(-3.14), int('42'), int('-99'), int(1.25), int(1.99), float('3.14'), float(10)
 
 # Text and Number Equivalence
 print(42 == '42') # False

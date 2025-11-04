@@ -7,15 +7,18 @@ print('My cat has ' + myCat['color'] + ' fur.')
 
 spam = {12345: 'Luggage Combination', 42: 'The Answer'}
 
-# Dictionaries vs. Lists
+# Dictionaries vs. Lists 
+# Items in dictionaries are unordered, while items in lists are ordered.
+# In lists, the order of items matters, but in dictionaries, it does not.
+# Lists use integer indexes to access values, while dictionaries use keys of any immutable data type (string, integer, tuple).
 spam = ['cats', 'dogs', 'moose']
 bacon = ['dogs', 'moose', 'cats']
-print(spam == bacon) # output False
+print(spam == bacon) # False
 
 eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
 ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
 
-print(eggs == ham) # output True
+print(eggs == ham) # True
 
 spam = {'name': 'Zophie', 'age': 7}
 # print(spam['color']) # return KeyError
@@ -58,12 +61,12 @@ for k, v in spam.items():
     print('Key: ' + k + 'Value: ' + str(v))
 
 # Checking Whether a Key or Value Exists in a Dictionary
-spam = {'name': 'Zophie', 'age': 7}
+spam = {'name': 'Zophie', 'age': 7} 
 print('name' in spam.keys())
 print('Zophie' in spam.keys())
 print('color' in spam.keys())
 print('color' not in spam.keys())
-print('color' in spam)
+print('color' in spam) # same as 'color' in spam.keys()
 
 # The get() Method
 picnicItems = {'apples': 5, 'cups': 2}
@@ -100,8 +103,8 @@ for character in message:
 pprint.pprint(count)
 
 # Using Data Structures to Model Real-World Things
-# Tic Tac Toe: ticTacToe.py
 
+# Tic Tac Toe: ticTacToe.py
 theBoard = {
     'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
     'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
